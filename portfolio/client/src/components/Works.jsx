@@ -5,49 +5,69 @@ import { X, ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    shortDesc: 'A full-stack scalable e-commerce solution.',
-    description: 'A comprehensive, scalable e-commerce platform featuring a modern UI, real-time cart functionality, secure payment gateway integration, and an admin dashboard for inventory management. The architecture is built for high performance and seamless user experience.',
-    techStack: ['React.js', 'javascript',  'Tailwind CSS', 'Redux'],
-    color: 'from-blue-500 flex-blue-600',
-    bgImg: 'bg-gradient-to-br from-blue-900 to-slate-900',
+    title: "FurniShop - Furniture Website",
+    shortDesc: "A modern furniture shopping website with elegant UI.",
+    description:
+      "FurniShop is a stylish and user-friendly furniture website designed to showcase and sell modern home decor products. It features a clean UI, product listings with categories, add-to-cart functionality, and a smooth browsing experience. The design focuses on aesthetics and usability, making it easy for users to explore and purchase furniture online.",
+    techStack: ["React.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
+    color: "from-amber-500 to-orange-600",
+    bgImg: "bg-gradient-to-br from-cyan-900 to-slate-900",
+    githubLink: "https://github.com/mahek1574/REACT_PROJECTS",
+    liveLink: "#",
   },
   {
     id: 2,
-    title: 'Chatboard App',
-    shortDesc: 'Real-time chat board application.',
-    description: 'A powerful real-time messaging platform supporting private and group chats, read receipts, typing indicators, and media sharing. Built using WebSocket technology for ultra-low latency communication across the globe.',
-    techStack: ['Next.js', 'javascript', 'react.js', 'MongoDB'],
-    color: 'from-cyan-400 to-blue-500',
-    bgImg: 'bg-gradient-to-br from-cyan-900 to-slate-900',
+    title: "Admin Dashboard Panel",
+    shortDesc: "A modern admin panel for managing users, analytics, and data",
+    description:
+      "A fully responsive admin dashboard built with React and Tailwind CSS. It includes user management, dynamic data tables, charts for analytics, and role-based access control. The UI is optimized for performance and usability, providing a seamless experience for administrators to monitor and manage application data.",
+    tech: ["React", "Tailwind CSS", "JavaScript", "Chart.js"],
+
+    techStack: ["Next.js", "javascript", "react.js"],
+    color: "from-cyan-400 to-blue-500",
+    bgImg: "bg-gradient-to-br from-cyan-900 to-slate-900",
+    githubLink: "https://github.com/mahek1574/REACT_PROJECTS",
+    liveLink: "#",
   },
   {
-  id: 3,
-  title: 'Blog App',
-  shortDesc: 'A dynamic blog platform with category filtering and full CRUD features.',
-  description: 'A modern blog application that allows users to create, read, and manage blogs efficiently. It includes category-based filtering, dynamic routing for individual blog pages, and a responsive UI. The app integrates REST APIs for real-time data handling and provides a smooth user experience with clean design and structured content management.',
-  techStack: ['React.js', 'React Router', 'Axios', 'CSS', 'JSON Server'],
-  color: 'from-green-400 to-emerald-500',
-  bgImg: 'bg-gradient-to-br from-slate-900 to-green-800',
-},
+    id: 3,
+    title: "Blog App",
+    shortDesc:
+      "A dynamic blog platform with category filtering and full CRUD features.",
+    description:
+      "A modern blog application that allows users to create, read, and manage blogs efficiently. It includes category-based filtering, dynamic routing for individual blog pages, and a responsive UI. The app integrates REST APIs for real-time data handling and provides a smooth user experience with clean design and structured content management.",
+    techStack: ["React.js", "React Router", "Axios", "CSS", "JSON Server"],
+    color: "from-green-400 to-emerald-500",
+    bgImg: "bg-gradient-to-br from-slate-900 to-green-800",
+    githubLink:
+      "https://github.com/mahek1574/REACT_PROJECTS/commit/947b01c0e6ef263ab23257df298b6ccaeace0995",
+    liveLink: "#",
+  },
   {
     id: 4,
-    title: 'RestaurantSite',
-    shortDesc: 'Premium dining reservation and menu system.',
-    description: 'A beautifully crafted high-end restaurant website featuring an interactive menu, automated table reservation system, and a customized CMS for the restaurant staff to manage daily specials dynamically.',
-    techStack: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'MySQL'],
-    color: 'from-orange-500 to-red-500',
-    bgImg: 'bg-gradient-to-br from-orange-900 to-slate-900',
+    title: "RestaurantSite",
+    shortDesc: "Premium dining reservation and menu system.",
+    description:
+      "A beautifully crafted high-end restaurant website featuring an interactive menu, automated table reservation system, and a customized CMS for the restaurant staff to manage daily specials dynamically.",
+    techStack: ["HTML5", "CSS3", "JavaScript", "React.js", "MySQL"],
+    color: "from-orange-500 to-red-500",
+    bgImg: "bg-gradient-to-br from-orange-900 to-slate-900",
+    githubLink: "https://github.com/mahek1574/REACT_PROJECTS",
+    liveLink: "#",
   },
   {
     id: 5,
-    title: 'TodoList Pro',
-    shortDesc: 'Advanced task management application.',
-    description: 'A productivity-focused task management tool with drag-and-drop functionality, categorized lists, deadline tracking, and an integrated Pomodoro timer to enhance workflow efficiency.',
-    techStack: ['React.js', 'Tailwind CSS', 'LocalStorage', 'Framer Motion'],
-    color: 'from-emerald-400 to-teal-500',
-    bgImg: 'bg-gradient-to-br from-emerald-900 to-slate-900',
-  }
+    title: "TodoList",
+    shortDesc: "Advanced task management application.",
+    description:
+      "A productivity-focused task management tool with drag-and-drop functionality, categorized lists, deadline tracking, and an integrated Pomodoro timer to enhance workflow efficiency.",
+    techStack: ["React.js", "Tailwind CSS", "LocalStorage", "Framer Motion"],
+    color: "from-emerald-400 to-teal-500",
+    bgImg: "bg-gradient-to-br from-emerald-900 to-slate-900",
+    githubLink:
+      "https://github.com/mahek1574/REACT_PROJECTS/tree/main/08_TODO_APP",
+    liveLink: "#",
+  },
 ];
 
 const Works = () => {
@@ -69,8 +89,8 @@ const Works = () => {
             Featured Works
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            A selection of my best projects, demonstrating my expertise across
-            different parts of the full-stack spectrum.
+            Explore some of my standout frontend projects, highlighting my
+            design and development expertise.
           </p>
         </motion.div>
 
@@ -175,14 +195,18 @@ const Works = () => {
 
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href={selectedProject.liveLink || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-bold transition-colors"
                   >
                     <ExternalLink size={18} />
                     <span>Live Demo</span>
                   </a>
                   <a
-                    href="https://github.com/mahek1574/REACT_PROJECTS/tree/main/08_TODO_APP"
+                    href={selectedProject.githubLink || "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 rounded-lg font-bold transition-colors"
                   >
                     <Github size={18} />

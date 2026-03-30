@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaGithub } from "react-icons/fa";
+import { FaReact,  FaGithub } from "react-icons/fa";
+import {TbBrandTailwind } from "react-icons/tb"
 import { SiJavascript } from "react-icons/si";
 
 const skills = [
@@ -9,7 +10,11 @@ const skills = [
     color: "from-yellow-400 to-yellow-600",
   },
   { name: "React.js", icon: FaReact, color: "from-cyan-400 to-cyan-600" },
-  { name: "Node.js", icon: FaNodeJs, color: "from-green-400 to-green-600" },
+  {
+    name: "tailwind css",
+    icon: TbBrandTailwind,
+    color: "from-green-400 to-green-600",
+  },
   { name: "GitHub", icon: FaGithub, color: "from-neutral-700 to-neutral-900" },
 ];
 
@@ -43,9 +48,9 @@ const About = () => {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <div className="bg-slate-900 border border-slate-700 rounded-lg p-4 w-[140px] text-center">
-                <div className="text-3xl font-black text-white">5+</div>
+                <div className="text-3xl font-black text-white">Fast</div>
                 <div className="text-xs uppercase tracking-widest text-slate-500">
-                  Years Exp.
+                  Learner
                 </div>
               </div>
               <div className="bg-slate-900 border border-slate-700 rounded-lg p-4 w-[140px] text-center">

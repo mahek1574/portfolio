@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col items-center md:items-start max-w-4xl pt-10">
-      
+        
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -33,7 +33,7 @@ const Hero = () => {
           >
             <span className="block text-slate-300">Hello, I'm a</span>
 
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-300% animate-gradient-x inline-block pb-2 pr-2">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-300% animate-gradient-x inline-block pb-1 pr-1">
               <TypeAnimation
                 sequence={[
                   "Frontend Developer",

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  
+  --animate-shake: shake 0.2s ease-in-out 0s 2;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50/50 text-slate-900 font-inter antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2.5 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-all duration-300 shadow-lg shadow-indigo-100 hover:shadow-indigo-200 active:scale-95 text-sm font-semibold;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-500 transition-all bg-white placeholder:text-slate-400 text-slate-700;
+  }
+
+  .prose-serif {
+    @apply font-playfair;
+  }
+}
+
+::selection {
+  @apply bg-indigo-100 text-indigo-900;
+}

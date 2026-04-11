@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import  { useState, useEffect } from 'react';
+import { motion} from 'framer-motion';
 import { products } from '../data/products';
 import ProductCard from '../components/shop/ProductCard';
 import Button from '../components/common/Button';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
-  const titles = [
+  const titles = [  
     "Modern Living Starts Here",
   
     "Design Your Dream Space"

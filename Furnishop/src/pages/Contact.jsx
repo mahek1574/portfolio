@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import Button from "../components/common/Button";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
@@ -8,7 +8,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("Form Submit Clicked ✅");
+    console.log("Form Submit ");
 
     const formData = {
       user_name: e.target[0].value + " " + e.target[1].value,
@@ -20,7 +20,7 @@ const Contact = () => {
 
     
     if (!formData.user_name || !formData.user_email || !formData.message) {
-      alert("Please fill all fields ❗");
+      alert("Please fill all fields ");
       return;
     }
 
@@ -32,12 +32,12 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       )
       .then(() => {
-        alert("Message Sent Successfully ✅");
+        alert("Message Sent Successfully ");
         e.target.reset();
       })
       .catch((err) => {
         console.error(err);
-        alert("Failed to send ❌");
+        alert("Failed to send ");
       });
   };
 
@@ -104,7 +104,7 @@ const Contact = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-400 text-sm">Visit our studio</p>
+                    <p className="text-gray-400 text-sm">Visit our shop</p>
                     <p className="text-lg font-semibold">Ahmedabad, India</p>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="John"
+                    placeholder="mahek"
                     className="w-full px-6 py-4 rounded-2xl border border-gray-100 bg-gray-50 focus:ring-2 focus:ring-primary outline-none"
                   />
                 </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="Doe"
+                    placeholder="shanishvara"
                     className="w-full px-6 py-4 rounded-2xl border border-gray-100 bg-gray-50 focus:ring-2 focus:ring-primary outline-none"
                   />
                 </div>
@@ -149,7 +149,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="123@example.com"
                   className="w-full px-6 py-4 rounded-2xl border border-gray-100 bg-gray-50 focus:ring-2 focus:ring-primary outline-none"
                 />
               </div>
@@ -165,9 +165,9 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              {/* ✅ ONLY CHANGE HERE */}
+        
               <Button
-                type="submit" // 🔥 ye add kiya
+                type="submit"
                 variant="primary"
                 className="w-full !py-4 flex items-center justify-center shadow-lg group"
               >

@@ -34,7 +34,7 @@ const Navbar = () => {
           <span className="text-primary-dark">SHOP</span>
         </Link>
 
-        {/* Desktop Menu */}
+    
         <div className="hidden md:flex items-center space-x-10">
           {navLinks.map((link) => (
             <Link
@@ -63,7 +63,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
+      
         <div className="md:hidden flex items-center space-x-6">
           <Link to="/cart" className="relative p-2">
             <ShoppingCart className="w-6 h-6 text-dark" />
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+    
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div

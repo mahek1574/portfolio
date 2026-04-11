@@ -1,13 +1,13 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 
 const Button = ({
   children,
-  type = "button", // ✅ default safe
+  type = "button",
   onClick,
   variant = "primary",
   className = "",
-  disabled = false, // ✅ extra (for loading state future use)
+  disabled = false,
 }) => {
   const variants = {
     primary: "bg-primary text-dark hover:bg-primary-dark shadow-md",
@@ -18,7 +18,7 @@ const Button = ({
 
   return (
     <motion.button
-      type={type} 
+      type={type}
       onClick={onClick}
       disabled={disabled}
       whileHover={!disabled ? { scale: 1.05 } : {}}

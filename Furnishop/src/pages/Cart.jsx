@@ -47,7 +47,7 @@ const Cart = () => {
         <h1 className="text-4xl font-bold text-dark mb-12 tracking-tighter">Shopping Cart</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Cart Items */}
+    
           <div className="lg:col-span-2 space-y-6">
             <AnimatePresence>
               {cartItems.map((item) => (
@@ -95,7 +95,7 @@ const Cart = () => {
             </AnimatePresence>
           </div>
 
-          {/* Summary */}
+  
           <div className="lg:col-span-1">
             <div className="bg-white rounded-3xl p-8 shadow-lg sticky top-32">
               <h2 className="text-2xl font-bold text-dark mb-8">Order Summary</h2>
@@ -105,7 +105,7 @@ const Cart = () => {
                   <span className="font-bold text-dark">${subtotal}</span>
                 </div>
                 <div className="flex justify-between text-gray-500">
-                  <span>Shipping</span>
+                  <span>Shipping</span> 
                   <span className="text-green-500 font-bold">Free</span>
                 </div>
                 <div className="border-t border-gray-100 pt-4 mt-4 flex justify-between">

@@ -35,12 +35,12 @@ const Contact = () => {
       id="contact"
       className="py-24 bg-slate-950 relative overflow-hidden"
     >
-      {/* Background Effect */}
+  
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-900/20 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16">
-          {/* LEFT SIDE CONTENT */}
+  
           <motion.div
             className="w-full lg:w-1/2"
             initial={{ opacity: 0, x: -50 }}
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT SIDE FORM */}
+        
           <motion.div
             className="w-full lg:w-1/2"
             initial={{ opacity: 0, x: 50 }}
@@ -127,7 +127,7 @@ const Contact = () => {
                   />
                 </div>
 
-                {/* Message */}
+            
                 <div>
                   <label className="block text-sm text-slate-400 mb-2">
                     Message

@@ -12,7 +12,8 @@ const projects = [
     techStack: ["React.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
     color: "from-amber-500 to-orange-600",
     bgImg: "bg-gradient-to-br from-cyan-900 to-slate-900",
-    githubLink: "https://github.com/mahek1574/REACT_PROJECTS",
+    githubLink:
+      "https://github.com/mahek1574/portfolio/commit/fed4971d9f39f0779315b0b7a90e5dd827cda708",
     liveLink: "#",
   },
   {
@@ -21,12 +22,11 @@ const projects = [
     shortDesc: "A modern admin panel for managing users, analytics, and data",
     description:
       "A fully responsive admin dashboard built with React and Tailwind CSS. It includes user management, dynamic data tables, charts for analytics, and role-based access control. The UI is optimized for performance and usability, providing a seamless experience for administrators to monitor and manage application data.",
-    tech: ["React", "Tailwind CSS", "JavaScript", "Chart.js"],
-
-    techStack: ["Next.js", "javascript", "react.js"],
+    techStack: ["React", "Tailwind CSS", "JavaScript", "Chart.js"],
     color: "from-cyan-400 to-blue-500",
     bgImg: "bg-gradient-to-br from-cyan-900 to-slate-900",
-    githubLink: "https://github.com/mahek1574/REACT_PROJECTS",
+    githubLink:
+      "https://github.com/mahek1574/portfolio/commit/9eff98359557b212d423546003f5bd91c9c2016a",
     liveLink: "#",
   },
   {
@@ -36,32 +36,33 @@ const projects = [
       "A dynamic blog platform with category filtering and full CRUD features.",
     description:
       "A modern blog application that allows users to create, read, and manage blogs efficiently. It includes category-based filtering, dynamic routing for individual blog pages, and a responsive UI. The app integrates REST APIs for real-time data handling and provides a smooth user experience with clean design and structured content management.",
-    techStack: ["React.js", "React Router", "Axios", "CSS", "JSON Server"],
+    techStack: ["React.js", "React Router", "CSS", "tailwind css"],
     color: "from-green-400 to-emerald-500",
     bgImg: "bg-gradient-to-br from-slate-900 to-green-800",
     githubLink:
-      "https://github.com/mahek1574/REACT_PROJECTS/commit/947b01c0e6ef263ab23257df298b6ccaeace0995",
+      "https://github.com/mahek1574/portfolio/commit/d8d6836857f43784a06ba5303d1231a06a7165ce",
     liveLink: "#",
   },
   {
     id: 4,
-    title: "RestaurantSite",
-    shortDesc: "Premium dining reservation and menu system.",
+    title: "Image gallery",
+    shortDesc: "Responsive Image & Video Gallery with Advanced Filtering",
     description:
-      "A beautifully crafted high-end restaurant website featuring an interactive menu, automated table reservation system, and a customized CMS for the restaurant staff to manage daily specials dynamically.",
-    techStack: ["HTML5", "CSS3", "JavaScript", "React.js", "MySQL"],
+      "A responsive image and video gallery built with React and Tailwind CSS. It features category-based filtering, search functionality, and rating-based sorting. Users can view media in a modal with detailed information and navigate through items using next and previous controls, along with dynamic suggestions for a better browsing experience.",
+    techStack: ["Framer Motion", "JavaScript", "React.js", "Lucide-icons"],
     color: "from-orange-500 to-red-500",
     bgImg: "bg-gradient-to-br from-orange-900 to-slate-900",
-    githubLink: "https://github.com/mahek1574/REACT_PROJECTS",
+    githubLink:
+      "https://github.com/mahek1574/portfolio/commit/3a2d01dffc1f4ad937dee51552ea2ae809f021b2",
     liveLink: "#",
   },
   {
     id: 5,
     title: "TodoList",
-    shortDesc: "Advanced task management application.",
+    shortDesc: " task management application.",
     description:
-      "A productivity-focused task management tool with drag-and-drop functionality, categorized lists, deadline tracking, and an integrated Pomodoro timer to enhance workflow efficiency.",
-    techStack: ["React.js", "Tailwind CSS", "LocalStorage", "Framer Motion"],
+      "A simple To-Do app that allows users to add, edit, and delete tasks. It stores data in localStorage, so tasks remain saved even after refreshing or closing the browser.",
+    techStack: ["React.js, localstorage,css"],
     color: "from-emerald-400 to-teal-500",
     bgImg: "bg-gradient-to-br from-emerald-900 to-slate-900",
     githubLink:

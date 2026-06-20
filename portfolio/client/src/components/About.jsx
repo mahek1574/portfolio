@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { FaReact,  FaGithub } from "react-icons/fa";
-import {TbBrandTailwind } from "react-icons/tb"
-import { SiJavascript } from "react-icons/si";
+import { FaReact, FaGithub, FaNodeJs } from "react-icons/fa";
+import { TbBrandTailwind } from "react-icons/tb"
+import { SiJavascript, SiMongodb, SiExpress } from "react-icons/si";
 
 const skills = [
   {
@@ -10,10 +10,13 @@ const skills = [
     color: "from-yellow-400 to-yellow-600",
   },
   { name: "React.js", icon: FaReact, color: "from-cyan-400 to-cyan-600" },
+  { name: "Node.js", icon: FaNodeJs, color: "from-green-500 to-emerald-600" },
+  { name: "Express", icon: SiExpress, color: "from-gray-400 to-gray-600" },
+  { name: "MongoDB", icon: SiMongodb, color: "from-green-600 to-green-800" },
   {
     name: "tailwind css",
     icon: TbBrandTailwind,
-    color: "from-green-400 to-green-600",
+    color: "from-cyan-400 to-blue-500",
   },
   { name: "GitHub", icon: FaGithub, color: "from-neutral-700 to-neutral-900" },
 ];
@@ -36,13 +39,11 @@ const About = () => {
             <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
               <p>
                 As a passionate{" "}
-                <strong className="text-cyan-400">Frontend Developer</strong>, I
-                craft modern, responsive, and visually stunning user interfaces
-                using React and advanced CSS techniques.
+                <strong className="text-cyan-400">Full Stack Developer</strong>, I
+                craft modern, secure, and robust web applications using the MERN stack (MongoDB, Express, React, Node.js).
               </p>
               <p>
-                My goal is to deliver seamless user experiences through smooth
-                animations, clean design, and high-performance web applications.
+                My goal is to deliver seamless end-to-end user experiences through high-performance front-ends, structured databases, and scalable REST APIs.
               </p>
             </div>
 

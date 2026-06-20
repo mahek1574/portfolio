@@ -7,14 +7,12 @@ const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden"
     >
-  
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-600/20 rounded-full mix-blend-screen filter blur-[120px] opacity-70 animate-blob"></div>
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full mix-blend-screen filter blur-[120px] opacity-70 animate-blob animation-delay-2000"></div>
       <div className="absolute -bottom-32 left-1/3 w-96 h-96 bg-purple-600/20 rounded-full mix-blend-screen filter blur-[120px] opacity-70 animate-blob animation-delay-4000"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col items-center md:items-start max-w-4xl pt-10">
-        
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -24,25 +22,26 @@ const Hero = () => {
             Welcome to my digital universe
           </motion.div>
 
-          
           <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-100 mb-6 leading-tight text-center md:text-left"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 3.7 }}
           >
-            <span className="block text-slate-300">Hello, I'm a</span>
+            <span className="block text-slate-300 text-[0.95em]">
+              Hello, I'm a
+            </span>
 
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-300% animate-gradient-x inline-block pb-1 pr-1">
+            <span className="text-[0.95em] bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-cyan-400 bg-300% animate-gradient-x inline-block pb-1 pr-1">
               <TypeAnimation
                 sequence={[
-                  "Frontend Developer",
+                  "Full Stack Developer",
                   2000,
-                  "React Developer",
+                  "MERN Stack Developer",
                   2000,
-                  "UI Designer",
+                  "React & Node Developer",
                   2000,
-                  "JavaScript Developer",
+                  "Backend API Developer",
                   2000,
                 ]}
                 wrapper="span"
@@ -53,19 +52,17 @@ const Hero = () => {
             </span>
           </motion.h1>
 
-      
           <motion.p
             className="text-lg md:text-2xl text-slate-400 max-w-2xl mb-10 text-center md:text-left leading-relaxed"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 3.9 }}
           >
-            I design and build modern, responsive, and visually engaging user
-            interfaces. Turning ideas into smooth, interactive, and
-            user-friendly web experiences.
+            I build robust full-stack web applications from front-end user
+            experiences to back-end databases and APIs. Turning ideas into
+            smooth, interactive, and production-ready products.
           </motion.p>
 
-          
           <motion.div
             className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6"
             initial={{ opacity: 0, y: 50 }}

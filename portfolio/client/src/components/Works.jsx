@@ -5,6 +5,32 @@ import { X, ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
+    title: "CarePlus - Doctor Appointment System",
+    shortDesc:
+      "A full-stack healthcare platform for booking and managing doctor appointments",
+
+    description:
+      "CarePlus is a full-stack doctor appointment management system built with React, Node.js, Express.js, MongoDB, and Tailwind CSS. Patients can register, browse doctors, book appointments, and manage their schedules. Doctors can view and manage appointment requests, while administrators can manage users, doctors, and platform data. The application includes authentication, role-based access control, responsive UI, and secure backend APIs.",
+
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Axios",
+    ],
+
+    color: "from-emerald-400 to-teal-500",
+    bgImg: "bg-gradient-to-br from-emerald-900 to-slate-900",
+
+    githubLink:
+      "https://github.com/mahek1574/NODE_PROJECTS/tree/main/carepulse",
+    liveLink: "#",
+  },
+  {
+    id: 2,
     title: "FurniShop - Furniture Website",
     shortDesc: "A modern furniture shopping website with elegant UI.",
     description:
@@ -16,33 +42,33 @@ const projects = [
       "https://github.com/mahek1574/portfolio/commit/fed4971d9f39f0779315b0b7a90e5dd827cda708",
     liveLink: "#",
   },
-  {
-    id: 2,
-    title: "Admin Dashboard Panel",
-    shortDesc: "A modern admin panel for managing users, analytics, and data",
-    description:
-      "A fully responsive admin dashboard built with React and Tailwind CSS. It includes user management, dynamic data tables, charts for analytics, and role-based access control. The UI is optimized for performance and usability, providing a seamless experience for administrators to monitor and manage application data.",
-    techStack: ["React", "Tailwind CSS", "JavaScript", "Chart.js"],
-    color: "from-cyan-400 to-blue-500",
-    bgImg: "bg-gradient-to-br from-cyan-900 to-slate-900",
-    githubLink:
-      "https://github.com/mahek1574/portfolio/commit/9eff98359557b212d423546003f5bd91c9c2016a",
-    liveLink: "#",
-  },
+
   {
     id: 3,
-    title: "Blog App",
-    shortDesc:
-      "A dynamic blog platform with category filtering and full CRUD features.",
+    title: "MovieVerse - Movie Streaming Platform",
+    shortDesc: "A full-stack movie discovery and streaming platform",
+
     description:
-      "A modern blog application that allows users to create, read, and manage blogs efficiently. It includes category-based filtering, dynamic routing for individual blog pages, and a responsive UI. The app integrates REST APIs for real-time data handling and provides a smooth user experience with clean design and structured content management.",
-    techStack: ["React.js", "React Router", "CSS", "tailwind css"],
-    color: "from-green-400 to-emerald-500",
-    bgImg: "bg-gradient-to-br from-slate-900 to-green-800",
+      "MovieVerse is a full-stack movie platform built using React, Node.js, Express.js, MongoDB, and Tailwind CSS. Users can browse movies, search by title, view detailed movie information, explore categories, and manage their favorite movies. The application features a modern responsive UI, secure authentication, REST APIs, dynamic content management, and an optimized user experience across devices.",
+
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Axios",
+    ],
+
+    color: "from-red-500 to-orange-500",
+    bgImg: "bg-gradient-to-br from-red-900 to-slate-900",
+
     githubLink:
-      "https://github.com/mahek1574/portfolio/commit/d8d6836857f43784a06ba5303d1231a06a7165ce",
+      "https://github.com/mahek1574/NODE_PROJECTS/tree/main/MOVIE_PROJECT",
     liveLink: "#",
   },
+
   {
     id: 4,
     title: "Image gallery",
@@ -90,8 +116,8 @@ const Works = () => {
             Featured Works
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Explore some of my standout frontend projects, highlighting my
-            design and development expertise.
+            Explore some of my standout web projects, highlighting my
+            full-stack and frontend development expertise.
           </p>
         </motion.div>
 

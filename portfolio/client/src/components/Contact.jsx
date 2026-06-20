@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser"
+import axios from "axios";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,18 +14,14 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
 
-    emailjs
-      .send(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        formData,
-        import.meta.env.VITE_PUBLIC_KEY,
-      )
-      .then(() => {
+    axios
+      .post("http://localhost:5000/api/contact", formData)
+      .then((res) => {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("Error submitting contact form:", err);
         setStatus("error");
       });
   };
@@ -55,16 +51,16 @@ const Contact = () => {
             <div className="space-y-6 text-slate-400 text-lg leading-relaxed mb-10">
               <p>
                 As a passionate{" "}
-                <strong className="text-white">Frontend Developer</strong>, I
-                specialize in creating modern, responsive, and visually engaging
-                user interfaces that deliver smooth user experiences.
+                <strong className="text-white">Full Stack Developer</strong>, I
+                specialize in creating end-to-end web applications that combine
+                visually stunning user interfaces with highly performant backend APIs.
               </p>
 
               <p>
-                I work with technologies like{" "}
-                <b>React.js, JavaScript, and Tailwind CSS</b>
-                to build fast, interactive, and user-friendly web applications
-                with clean design and seamless animations.
+                I work with modern technologies like{" "}
+                <b>MongoDB, Express, React, Node.js, and Tailwind CSS</b>
+                to build scalable, interactive, and user-friendly products with
+                clean, maintainable code architectures.
               </p>
 
               <p className="text-cyan-400 font-medium">

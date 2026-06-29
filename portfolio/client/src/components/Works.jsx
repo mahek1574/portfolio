@@ -84,16 +84,15 @@ const projects = [
   },
   {
     id: 5,
-    title: "TodoList",
-    shortDesc: " task management application.",
+    title: "Nail Art Studio",
+    shortDesc: "Modern and interactive nail art portfolio website.",
     description:
-      "A simple To-Do app that allows users to add, edit, and delete tasks. It stores data in localStorage, so tasks remain saved even after refreshing or closing the browser.",
-    techStack: ["React.js, localstorage,css"],
-    color: "from-emerald-400 to-teal-500",
-    bgImg: "bg-gradient-to-br from-emerald-900 to-slate-900",
-    githubLink:
-      "https://github.com/mahek1574/REACT_PROJECTS/tree/main/08_TODO_APP",
-    liveLink: "#",
+      "A beautifully designed Nail Art portfolio website showcasing creative nail designs with smooth animations and a premium user experience. Built using React.js, Tailwind CSS, Framer Motion, and Lenis for seamless scrolling and engaging UI interactions.",
+    techStack: ["React.js", "Tailwind CSS", "Framer Motion", "Lenis"],
+    color: "from-pink-400 to-rose-500",
+    bgImg: "bg-gradient-to-br from-pink-900 to-slate-900",
+    githubLink: "https://github.com/mahek1574/PROJECTS_/tree/main/nail_studio",
+    liveLink: "https://projects-td18.vercel.app/",
   },
 ];
 
